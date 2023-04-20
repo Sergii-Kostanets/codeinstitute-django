@@ -85,6 +85,17 @@ Run a specific test:
 python3 manage.py test todo.test_forms.TestItemForm.test_fields_are_explicit_in_form_metaclass
 ```
 
+How much code tested:
+```
+pip3 install coverage
+```
+
+View report
+```
+coverage report
+coverage html
+```
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sergii-Kostanets,
