@@ -15,6 +15,18 @@ ls -lv
 cd -
 ```
 
+For VSCode:
+```
+pip show django
+export PATH=$PATH:/Users/sergeykostanets/Library/Python/3.11/bin
+django-admin --version
+```
+
+Create project:
+```
+django-admin startproject django_todo .
+```
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sergii-Kostanets,
