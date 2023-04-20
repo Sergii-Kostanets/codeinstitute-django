@@ -1,6 +1,16 @@
+Latest version of Django
+```
+pip3 install django
+```
+
+Django 3.2 is the LTS (Long Term Support) version of Django and is therefore preferable to use over the newest Django 4
+```
+pip3 install 'django<4'
+```
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+Welcome Sergii-Kostanets,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
