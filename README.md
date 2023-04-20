@@ -37,6 +37,12 @@ Install app:
 python3 manage.py startapp todo
 ```
 
+Runs a test migration run
+```
+python3 manage.py makemigrations --dry-run
+```
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sergii-Kostanets,
