@@ -65,6 +65,26 @@ Create Super User
 python3 manage.py createsuperuser
 ```
 
+Run tests:
+```
+python3 manage.py test
+```
+
+Run just specific file with tests:
+```
+python3 manage.py test todo.test_forms
+```
+
+Run specific class
+```
+python3 manage.py test todo.test_forms.TestItemForm
+```
+
+Run a specific test:
+```
+python3 manage.py test todo.test_forms.TestItemForm.test_fields_are_explicit_in_form_metaclass
+```
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sergii-Kostanets,
