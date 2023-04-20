@@ -37,11 +37,33 @@ Install app:
 python3 manage.py startapp todo
 ```
 
+Make migrations
+
 Runs a test migration run
 ```
 python3 manage.py makemigrations --dry-run
 ```
 
+```
+python3 manage.py makemigrations
+```
+
+```
+python3 manage.py showmigrations 
+```
+
+```
+python3 manage.py migrate --plan
+```
+
+```
+python3 manage.py migrate
+```
+
+Create Super User
+```
+python3 manage.py createsuperuser
+```
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
