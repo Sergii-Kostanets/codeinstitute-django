@@ -8,6 +8,13 @@ Django 3.2 is the LTS (Long Term Support) version of Django and is therefore pre
 pip3 install 'django<4'
 ```
 
+For GitPod (check installed packages):
+```
+cd /workspace/.pip-modules/lib/python3.8/site-packages/
+ls -lv
+cd -
+```
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sergii-Kostanets,
