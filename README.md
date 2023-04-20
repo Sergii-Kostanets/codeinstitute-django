@@ -27,6 +27,16 @@ Create project:
 django-admin startproject django_todo .
 ```
 
+Run project:
+```
+python3 manage.py runserver
+```
+
+Install app:
+```
+python3 manage.py startapp todo
+```
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sergii-Kostanets,
