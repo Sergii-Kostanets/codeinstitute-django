@@ -154,6 +154,12 @@ Run the migrate command in the terminal to build the database according to the m
 python3 manage.py migrate
 ```
 
+Create Procfile:
+```
+echo 'web: gunicorn django_todo.wsgi:application' > Procfile
+```
+delete blank line
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sergii-Kostanets,
