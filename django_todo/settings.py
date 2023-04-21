@@ -20,7 +20,7 @@ if os.path.exists('env.py'):
 development = os.environ.get('DEVELOPMENT', False)
 
 # SECRET_KEY_ENV = os.getenv('SECRET_KEY_ENV')
-SECRET_KEY_ENV = os.environ.get('SECRET_KEY_ENV')
+SECRET_KEY_ENV = os.environ.get('SECRET_KEY_ENV', '')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
