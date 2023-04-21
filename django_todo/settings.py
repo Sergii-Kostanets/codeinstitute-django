@@ -17,7 +17,8 @@ import dj_database_url
 if os.path.exists('env.py'):
     import env
 
-SECRET_KEY_ENV = os.getenv('SECRET_KEY_ENV')
+# SECRET_KEY_ENV = os.getenv('SECRET_KEY_ENV')
+SECRET_KEY_ENV = os.environ.get('SECRET_KEY_ENV')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,7 +33,9 @@ SECRET_KEY = SECRET_KEY_ENV
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['codeinstitute-todo.herokuapp.com']
+# ALLOWED_HOSTS = ['codeinstitute-todo.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME'), '127.0.0.1']
+
 
 
 # Application definition
@@ -90,7 +93,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 
 
 DATABASES = {
-    'default': dj_database_url.parse(os.getenv('DATABASE_URL'))
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
