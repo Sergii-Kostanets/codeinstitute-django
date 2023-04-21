@@ -32,7 +32,7 @@ SECRET_KEY = SECRET_KEY_ENV
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['codeinstitute-todo.herokuapp.com']
 
 
 # Application definition
