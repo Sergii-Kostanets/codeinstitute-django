@@ -96,6 +96,64 @@ coverage report
 coverage html
 ```
 
+Login to Heroku:
+```
+heroku login -i
+```
+
+Install postgres plugin to Heroku:
+```
+pip3 install psycopg2-binary
+```
+
+Install gunicorn:
+```
+pip3 install gunicorn
+```
+
+Create requirements for Heroku:
+```
+pip3 freeze --local > requirements.txt
+```
+
+Install the dj-database-url package version 0.5.0 in the terminal with pip3. This will allow us to parse the URL we got above to a format Django can work with:
+```
+pip3 install dj_database_url==0.5.0
+```
+and remember to add it to your requirements.txt with
+```
+pip3 freeze --local > requirements.txt
+```
+
+At the top of settings.py, import the package and the env.py file
+```
+from pathlib import Path
+import os
+import dj_database_url
+import env
+```
+
+In settings.py, comment out the default database setting and replace it to use the DATABASE_URL environment variable.
+Your code should now look like this:
+```
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
+```
+
+Run the migrate command in the terminal to build the database according to the model structure we created in earlier videos
+```
+python3 manage.py migrate
+```
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sergii-Kostanets,
